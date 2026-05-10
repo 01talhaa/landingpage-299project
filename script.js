@@ -1,5 +1,5 @@
 /* ============================================
-   LEXBD LANDING PAGE - JAVASCRIPT
+    LAWHUB LANDING PAGE - JAVASCRIPT
    ============================================ */
 
 // ============================================
@@ -458,4 +458,4 @@ document.querySelectorAll('.btn-primary').forEach(button => {
 // INITIALIZATION
 // ============================================
 
-console.log('LexBD Landing Page Loaded Successfully ✓');
+console.log('LawHub Landing Page Loaded Successfully ✓');

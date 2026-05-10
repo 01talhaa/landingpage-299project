@@ -15,9 +15,23 @@
 <nav class="navbar" id="navbar">
   <div class="nav-inner">
     <a href="#" class="nav-logo">
-      <svg class="logo-mark" width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path d="M12 2L12 6M12 18L12 22M4.22 4.22L7.05 7.05M16.95 16.95L19.78 19.78M2 12L6 12M18 12L22 12M4.22 19.78L7.05 16.95M16.95 7.05L19.78 4.22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-        <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/>
+<svg class="logo-mark" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <!-- center pole -->
+        <line x1="12" y1="4" x2="12" y2="20"/>
+        <!-- base -->
+        <path d="M8 20h8"/>
+        <!-- beam -->
+        <line x1="3" y1="7" x2="21" y2="7"/>
+        <!-- pivot dot -->
+        <circle cx="12" cy="7" r="1" fill="currentColor" stroke="none"/>
+        <!-- left chain -->
+        <line x1="5" y1="7" x2="5" y2="12"/>
+        <!-- right chain -->
+        <line x1="19" y1="7" x2="19" y2="12"/>
+        <!-- left pan -->
+        <path d="M2 12 Q5 15 8 12"/>
+        <!-- right pan -->
+        <path d="M16 12 Q19 15 22 12"/>
       </svg>
       LawHub
     </a>

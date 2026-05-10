@@ -1,660 +1,664 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LawHub - AI Legal Research Platform for Bangladesh</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LawHub — AI Legal Research for Bangladesh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- NAVBAR -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-icon">⚖️</span>
-                <span class="logo-text">LawHub</span>
-            </div>
-            <div class="nav-menu" id="navMenu">
-                <a href="#features" class="nav-link">Features</a>
-                <a href="#how-it-works" class="nav-link">How It Works</a>
-                <a href="#tech-stack" class="nav-link">Tech Stack</a>
-                <a href="#faq" class="nav-link">FAQ</a>
-                <a href="http://lawhub-dusky.vercel.app/" target="_blank">
-    <button class="nav-cta">Open Platform →</button>
-</a>
-            </div>
-            <button class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <svg class="logo-mark" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M12 2L12 6M12 18L12 22M4.22 4.22L7.05 7.05M16.95 16.95L19.78 19.78M2 12L6 12M18 12L22 12M4.22 19.78L7.05 16.95M16.95 7.05L19.78 4.22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/>
+      </svg>
+      LawHub
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#tech-stack">Tech Stack</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="nav-actions">
+      <a href="http://lawhub-dusky.vercel.app/" target="_blank" class="btn-nav">Open Platform <span class="btn-arrow">↗</span></a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-noise"></div>
+  <div class="hero-grid-lines"></div>
+
+  <div class="hero-inner">
+    <div class="hero-eyebrow">
+      <span class="eyebrow-dot"></span>
+      AI-Powered · Bangladesh Law · Free Forever
+    </div>
+
+    <h1 class="hero-headline">
+      Legal Research,<br>
+      <em>Finally</em> Reimagined<br>
+      <span class="headline-accent">for Bangladesh</span>
+    </h1>
+
+    <p class="hero-sub">
+      500+ Bangladesh laws, court judgments, and legal codes — explained by AI in plain English or Bangla. Ask anything. Get sourced answers. Instantly.
+    </p>
+
+    <div class="hero-cta-row">
+      <a href="http://lawhub-dusky.vercel.app/" target="_blank" class="btn-primary">
+        Start Exploring Laws
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M9 4L13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#features" class="btn-ghost">See All Features</a>
+    </div>
+
+    <div class="hero-trust">
+      <span class="trust-item"><span class="trust-check">✓</span> Official DB Sources</span>
+      <span class="trust-divider">·</span>
+      <span class="trust-item"><span class="trust-check">✓</span> Zero Data Storage</span>
+      <span class="trust-divider">·</span>
+      <!-- <span class="trust-item"><span class="trust-check">✓</span> No Account Needed</span> -->
+      <span class="trust-divider">·</span>
+      <span class="trust-item"><span class="trust-check">✓</span> Made for Bangladesh</span>
+    </div>
+  </div>
+
+  <!-- Chat demo card -->
+  <div class="hero-demo-wrap">
+    <div class="demo-card">
+      <div class="demo-card-header">
+        <div class="demo-dots">
+          <span></span><span></span><span></span>
         </div>
-    </nav>
-
-    <!-- HERO SECTION -->
-    <section class="hero" id="hero">
-        <div class="hero-background">
-            <div class="gradient-blob blob-1"></div>
-            <div class="gradient-blob blob-2"></div>
-            <div class="gradient-blob blob-3"></div>
-            <div class="gradient-blob blob-4"></div>
+        <span class="demo-card-title">LawHub AI Assistant</span>
+        <span class="demo-status"><span class="status-dot"></span>Live</span>
+      </div>
+      <div class="demo-messages">
+        <div class="msg msg-user">What are the penalties under the ICT Act?</div>
+        <div class="msg msg-ai">
+          <div class="msg-ai-inner">
+            Under the <strong>ICT Act 2006, Section 57</strong>, publishing false or defamatory content online carries imprisonment up to 14 years and a fine of up to BDT 1 crore. The offence is cognizable and non-bailable.
+          </div>
+          <div class="msg-sources">
+            <div class="msg-source">
+              <span class="source-icon">§</span>
+              <div>
+                <div class="source-name">ICT Act, 2006</div>
+                <div class="source-ref">Section 57</div>
+              </div>
+            </div>
+            <div class="msg-source">
+              <span class="source-icon">§</span>
+              <div>
+                <div class="source-name">Penal Code</div>
+                <div class="source-ref">Section 505</div>
+              </div>
+            </div>
+          </div>
         </div>
-        
-        <div class="hero-content">
-            <div class="hero-left">
-                <!-- <div class="hero-badge">
-                    🚀 Powered by LawHub Ai
-                </div> -->
-                <h1 class="hero-headline">
-                    Legal Research<br>
-                    Reimagined for<br>
-                    <span class="gradient-text">Bangladesh</span>
-                </h1>
-                <p class="hero-subheadline">
-                    Explore 500+ Bangladesh laws, court judgments, and legal codes — explained by AI in plain English or Bangla. Instant. Accurate. Free.
-                </p>
-                <div class="hero-ctas">
-                    <button class="btn btn-primary">Start Exploring Laws →</button>
-                    <button class="btn btn-secondary">Try AI Assistant</button>
-                </div>
-                <div class="trust-badges">
-                    <div class="badge">✅ Official DB Sources</div>
-                    <div class="badge">⚡ LawHub Ai-Powered</div>
-                    <div class="badge">🔒 Zero Data Storage</div>
-                    <div class="badge">🇧🇩 Made for Bangladesh</div>
-                </div>
-            </div>
-            
-            <div class="hero-right">
-                <div class="chat-demo">
-                    <div class="chat-header">
-                        <span class="chat-title">AI Legal Assistant</span>
-                    </div>
-                    <div class="chat-messages">
-                        <div class="message user-message">
-                            What are the penalties under the ICT Act?
-                        </div>
-                        <div class="message ai-message">
-                            <div class="typing-indicator">
-                                <span></span><span></span><span></span>
-                            </div>
-                        </div>
-                        <div class="message ai-message ai-response">
-                            Under the ICT Act (2006), Section 57 covers offenses related to false information causing public alarm...
-                        </div>
-                    </div>
-                    <div class="chat-sources">
-                        <div class="source-card">
-                            <span class="source-title">ICT Act, 2006</span>
-                            <span class="source-year">Section 57</span>
-                        </div>
-                        <div class="source-card">
-                            <span class="source-title">Bangladesh Penal Code</span>
-                            <span class="source-year">Section 505</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="msg msg-user">আমি কিভাবে ডিভোর্স ফাইল করবো?</div>
+        <div class="typing-row">
+          <span class="typing-dot"></span>
+          <span class="typing-dot"></span>
+          <span class="typing-dot"></span>
         </div>
-    </section>
+      </div>
+      <div class="demo-input-row">
+        <div class="demo-input">Ask any legal question in English or Bangla…</div>
+        <button class="demo-send" aria-label="Send">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8H14M10 4L14 8L10 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- TRUST BAR -->
-    <section class="trust-bar">
-        <div class="trust-content">
-            <h3 class="trust-title">Backed by Official Bangladesh Legal Sources</h3>
-            <div class="trust-logos">
-                <div class="trust-badge">🏛️ Bangladesh Supreme Court</div>
-                <div class="trust-badge">⚖️ Ministry of Law</div>
-                <div class="trust-badge">📚 bdlaws.minlaw.gov.bd</div>
-                <div class="trust-badge">🏛️ Bangladesh Parliament</div>
-            </div>
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    <span class="trust-label">Backed by official sources</span>
+    <div class="trust-sources">
+      <span>🏛 Bangladesh Supreme Court</span>
+      <span>⚖️ Ministry of Law</span>
+      <span>📚 bdlaws.minlaw.gov.bd</span>
+      <span>🏛 Bangladesh Parliament</span>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-block">
+        <div class="stat-num">500<span class="stat-plus">+</span></div>
+        <div class="stat-label">Legal Documents</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-num">7</div>
+        <div class="stat-label">Law Categories</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-num">&lt;300<span class="stat-unit">ms</span></div>
+        <div class="stat-label">Response Speed</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-num">2</div>
+        <div class="stat-label">AI Models</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-num">4</div>
+        <div class="stat-label">Citation Formats</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-num">100<span class="stat-unit">%</span></div>
+        <div class="stat-label">Free Forever</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features-section" id="features">
+  <div class="container">
+    <div class="section-tag">Features</div>
+    <h2 class="section-title">Everything You Need<br>for Legal Research</h2>
+    <p class="section-sub">A complete toolkit for lawyers, students, and researchers across Bangladesh.</p>
+
+    <div class="features-grid">
+      <div class="feat-card feat-large">
+        <div class="feat-icon-wrap" style="--icon-color: #3b82f6;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
         </div>
-    </section>
-
-    <!-- FEATURES SECTION -->
-    <section class="features" id="features">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Everything You Need for Legal Research</h2>
-                <p class="section-subtitle">A complete toolkit for lawyers, students, and researchers</p>
-            </div>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon" style="background: linear-gradient(135deg, #2563eb, #1d4ed8);">🔍</div>
-                    <h3 class="feature-title">Smart Legal Search</h3>
-                    <p class="feature-description">Full-text search across 500+ acts, ordinances, and Supreme Court judgments with advanced filters by type, category, year, and court</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon" style="background: linear-gradient(135deg, #06b6d4, #0891b2);">🤖</div>
-                    <h3 class="feature-title">AI Chat Assistant</h3>
-                    <p class="feature-description">Ask any legal question in English or Bangla. Powered by LawHub Ai with Google Gemini as backup for 99.9% uptime</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">🌐</div>
-                    <h3 class="feature-title">Legal Translation</h3>
-                    <p class="feature-description">Instantly translate legal text between English and Bangla. Preserves legal terminology, section numbers, and article references</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon" style="background: linear-gradient(135deg, #ec4899, #be185d);">📋</div>
-                    <h3 class="feature-title">AI Summarization</h3>
-                    <p class="feature-description">Get structured or brief AI-generated summaries of any legal document, clause, or section in seconds</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon" style="background: linear-gradient(135deg, #f59e0b, #d97706);">📖</div>
-                    <h3 class="feature-title">Citation Generator</h3>
-                    <p class="feature-description">Auto-generate citations in Bluebook, APA 7th, MLA 9th, Chicago, and Plain formats for any law in the database</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon" style="background: linear-gradient(135deg, #10b981, #059669);">🔖</div>
-                    <h3 class="feature-title">Bookmarks & History</h3>
-                    <p class="feature-description">Save documents, track your research history, search queries, and export all your data as JSON</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon" style="background: linear-gradient(135deg, #06b6d4, #06b6d4);">⚡</div>
-                    <h3 class="feature-title">Real-Time Streaming</h3>
-                    <p class="feature-description">AI responses stream live via NDJSON — no waiting, no page refreshes. Powered by LawHub Ai</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon" style="background: linear-gradient(135deg, #ef4444, #dc2626);">🛡️</div>
-                    <h3 class="feature-title">Privacy First</h3>
-                    <p class="feature-description">Zero server-side storage. All bookmarks and history live in your browser. No tracking, no cookies, no account needed</p>
-                </div>
-            </div>
+        <h3 class="feat-title">Smart Legal Search</h3>
+        <p class="feat-desc">Full-text search across 500+ acts, ordinances, and Supreme Court judgments. Filter by type, category, year, and court — instantly.</p>
+        <div class="feat-tags">
+          <span>Full-text</span><span>500+ Acts</span><span>Filters</span>
         </div>
-    </section>
+      </div>
 
-    <!-- HOW IT WORKS SECTION -->
-    <section class="how-it-works" id="how-it-works">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">From Question to Answer in Seconds</h2>
-                <p class="section-subtitle">LawHub's intelligent pipeline gets you legal clarity instantly</p>
-            </div>
-            
-            <div class="steps-container">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <div class="step-icon">💬</div>
-                    <h3 class="step-title">Ask Your Question</h3>
-                    <p class="step-description">Type your legal question in English or Bangla. LawHub intelligently understands your intent — whether it's about penalties, procedures, eligibility, or definitions.</p>
-                </div>
-
-                <div class="step-arrow">→</div>
-
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <div class="step-icon">⚡</div>
-                    <h3 class="step-title">AI + Database Fusion</h3>
-                    <p class="step-description">Your query simultaneously searches a live MongoDB legal database and is sent to LawHub Ai. The best matched law becomes the grounded context for your answer.</p>
-                </div>
-
-                <div class="step-arrow">→</div>
-
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <div class="step-icon">✅</div>
-                    <h3 class="step-title">Grounded, Sourced Answer</h3>
-                    <p class="step-description">You get a precise, sourced response citing the exact law, section number, and year — not hallucinated. Switch to Translate, Summarize, or Cite mode with one click.</p>
-                </div>
-            </div>
-
-            <div class="pipeline-diagram">
-                <div class="pipeline-item">User Query</div>
-                <div class="pipeline-arrow">→</div>
-                <div class="pipeline-item">Intent Detection</div>
-                <div class="pipeline-arrow">→</div>
-                <div class="pipeline-item">MongoDB Search</div>
-                <div class="pipeline-arrow">→</div>
-                <div class="pipeline-item">Relevance Scoring</div>
-                <div class="pipeline-arrow">→</div>
-                <div class="pipeline-item">LawHub Ai</div>
-                <div class="pipeline-arrow">→</div>
-                <div class="pipeline-item">Streamed Answer + Sources</div>
-            </div>
+      <div class="feat-card feat-large">
+        <div class="feat-icon-wrap" style="--icon-color: #06b6d4;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 8v4l2 2"/><path d="M18 2v6h6"/></svg>
         </div>
-    </section>
-
-    <!-- LIVE DEMO SECTION -->
-    <section class="demo" id="demo">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">See It In Action</h2>
-            </div>
-
-            <div class="demo-tabs">
-                <button class="tab-btn active" data-tab="tab-chat">AI Chat</button>
-                <button class="tab-btn" data-tab="tab-translation">Legal Translation</button>
-                <button class="tab-btn" data-tab="tab-summary">AI Summary</button>
-                <button class="tab-btn" data-tab="tab-citation">Citation Generator</button>
-            </div>
-
-            <div class="tab-content">
-                <!-- Tab 1: Chat -->
-                <div class="tab-pane active" id="tab-chat">
-                    <div class="demo-container">
-                        <div class="demo-chat">
-                            <div class="demo-message user">আমি কিভাবে ডিভোর্স ফাইল করবো?</div>
-                            <div class="demo-message ai">
-                                <strong>Family Ordinance, 1961 (Dissolution of Muslim Marriages):</strong><br><br>
-                                For Muslim marriages, divorce can be filed through:<br>
-                                1. Talaq (divorce by husband)<br>
-                                2. Khula (divorce by mutual consent)<br>
-                                3. Judicial divorce through Family Court<br><br>
-                                <strong>Family Courts Ordinance, 1985:</strong><br>
-                                File a petition in your district Family Court with proper grounds as per Section 2.
-                            </div>
-                        </div>
-                        <div class="demo-sources">
-                            <h4>Sources:</h4>
-                            <div class="demo-source-card">
-                                <span>Family Ordinance, 1961</span>
-                                <span>Section 2</span>
-                            </div>
-                            <div class="demo-source-card">
-                                <span>Family Courts Ordinance, 1985</span>
-                                <span>Section 5</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tab 2: Translation -->
-                <div class="tab-pane" id="tab-translation">
-                    <div class="demo-container translation-demo">
-                        <div class="translation-input">
-                            <h4>English</h4>
-                            <p>"Under the Penal Code Section 420, whoever commits fraud shall be punished with imprisonment up to three years and fine."</p>
-                        </div>
-                        <div class="translation-arrow">⇅</div>
-                        <div class="translation-output">
-                            <h4>বাংলা (Bangla)</h4>
-                            <p>"দণ্ডবিধির ৪২০ ধারা অনুযায়ী, যে ব্যক্তি জালিয়াতি করে তিন বছর পর্যন্ত কারাদণ্ড এবং জরিমানার সাজা পাবেন।"</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tab 3: Summary -->
-                <div class="tab-pane" id="tab-summary">
-                    <div class="demo-container">
-                        <div class="summary-toggles">
-                            <button class="toggle-btn active" data-toggle="structured">Structured</button>
-                            <button class="toggle-btn" data-toggle="brief">Brief</button>
-                        </div>
-                        <div class="summary-output structured-summary">
-                            <h4>Bangladesh Labor Act, 2006 - Key Points:</h4>
-                            <ul>
-                                <li><strong>Scope:</strong> Applies to all establishments with 10+ workers</li>
-                                <li><strong>Working Hours:</strong> Maximum 48 hours per week</li>
-                                <li><strong>Overtime:</strong> Compensated at 1.5x normal rate</li>
-                                <li><strong>Leave:</strong> Minimum 2 days per week + annual leave</li>
-                                <li><strong>Child Labor:</strong> Minimum age 15 years</li>
-                                <li><strong>Penalties:</strong> Violation fines up to 50,000 BDT</li>
-                            </ul>
-                        </div>
-                        <div class="summary-output brief-summary" style="display:none;">
-                            <p><strong>Brief Summary:</strong> The Bangladesh Labor Act, 2006 protects workers' rights, sets maximum working hours at 48/week, mandates overtime compensation, ensures minimum leave, prohibits child labor under 15, and penalizes violations up to 50,000 BDT.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tab 4: Citation -->
-                <div class="tab-pane" id="tab-citation">
-                    <div class="demo-container">
-                        <h4>Bangladesh Labor Act, 2006 - Citation Formats:</h4>
-                        <div class="citations">
-                            <div class="citation-format">
-                                <h5>Bluebook</h5>
-                                <p>BANGLADESH LABOR ACT, 2006, § 2 (Bangladesh)</p>
-                                <button class="copy-btn">Copy</button>
-                            </div>
-                            <div class="citation-format">
-                                <h5>APA 7th</h5>
-                                <p>Government of Bangladesh. (2006). Bangladesh Labor Act, 2006 (§ 2). Ministry of Labor.</p>
-                                <button class="copy-btn">Copy</button>
-                            </div>
-                            <div class="citation-format">
-                                <h5>MLA 9th</h5>
-                                <p>Bangladesh. Government. "Bangladesh Labor Act, 2006." § 2, 2006.</p>
-                                <button class="copy-btn">Copy</button>
-                            </div>
-                            <div class="citation-format">
-                                <h5>Chicago</h5>
-                                <p>Bangladesh. "Labor Act." 2006, §§ 2.</p>
-                                <button class="copy-btn">Copy</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <h3 class="feat-title">AI Chat Assistant</h3>
+        <p class="feat-desc">Ask any legal question in English or Bangla. Powered by LawHub Ai with Google Gemini fallback for 99.9% uptime. Responses stream live.</p>
+        <div class="feat-tags">
+          <span>English & Bangla</span><span>Streaming</span><span>99.9% Uptime</span>
         </div>
-    </section>
+      </div>
 
-    <!-- STATS SECTION -->
-    <section class="stats" id="stats">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number" data-target="500">0</div>
-                    <div class="stat-label">Legal Documents</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-target="7">0</div>
-                    <div class="stat-label">Legal Categories</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-target="2">0</div>
-                    <div class="stat-label">AI Models</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-target="4">0</div>
-                    <div class="stat-label">Citation Formats</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-target="2">0</div>
-                    <div class="stat-label">Languages</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number"><300ms</div>
-                    <div class="stat-label">Response Speed</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">100%</div>
-                    <div class="stat-label">Free Forever</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-target="0">0</div>
-                    <div class="stat-label">Data Stored on Server</div>
-                </div>
-            </div>
+      <div class="feat-card">
+        <div class="feat-icon-wrap" style="--icon-color: #8b5cf6;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8l6 6"/><path d="M4 14l6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="M22 22l-5-10-5 10"/><path d="M14 18h6"/></svg>
         </div>
-    </section>
+        <h3 class="feat-title">Legal Translation</h3>
+        <p class="feat-desc">Translate legal text between English and Bangla, preserving section numbers and legal terminology.</p>
+      </div>
 
-    <!-- LEGAL CATEGORIES SECTION -->
-    <section class="categories" id="categories">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Every Area of Bangladesh Law, Covered</h2>
-            </div>
-
-            <div class="categories-grid">
-                <div class="category-card" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(190, 24, 93, 0.1)); border-color: rgba(236, 72, 153, 0.3);">
-                    <div class="category-emoji">👨‍👩‍👧</div>
-                    <h3 class="category-name">Family Law</h3>
-                    <p class="category-count">45+ documents</p>
-                </div>
-
-                <div class="category-card" style="background: linear-gradient(135deg, rgba(251, 146, 60, 0.1), rgba(217, 119, 6, 0.1)); border-color: rgba(251, 146, 60, 0.3);">
-                    <div class="category-emoji">🏠</div>
-                    <h3 class="category-name">Property Law</h3>
-                    <p class="category-count">65+ documents</p>
-                </div>
-
-                <div class="category-card" style="background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(29, 78, 216, 0.1)); border-color: rgba(37, 99, 235, 0.3);">
-                    <div class="category-emoji">💼</div>
-                    <h3 class="category-name">Labor Law</h3>
-                    <p class="category-count">38+ documents</p>
-                </div>
-
-                <div class="category-card" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(220, 38, 38, 0.1)); border-color: rgba(239, 68, 68, 0.3);">
-                    <div class="category-emoji">⚖️</div>
-                    <h3 class="category-name">Criminal Law</h3>
-                    <p class="category-count">52+ documents</p>
-                </div>
-
-                <div class="category-card" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(124, 58, 237, 0.1)); border-color: rgba(139, 92, 246, 0.3);">
-                    <div class="category-emoji">💻</div>
-                    <h3 class="category-name">Cyber Law & ICT</h3>
-                    <p class="category-count">28+ documents</p>
-                </div>
-
-                <div class="category-card" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.1)); border-color: rgba(16, 185, 129, 0.3);">
-                    <div class="category-emoji">🏢</div>
-                    <h3 class="category-name">Business & Corporate</h3>
-                    <p class="category-count">72+ documents</p>
-                </div>
-
-                <div class="category-card" style="background: linear-gradient(135deg, rgba(234, 179, 8, 0.1), rgba(180, 83, 9, 0.1)); border-color: rgba(234, 179, 8, 0.3);">
-                    <div class="category-emoji">💰</div>
-                    <h3 class="category-name">Tax Law</h3>
-                    <p class="category-count">35+ documents</p>
-                </div>
-            </div>
+      <div class="feat-card">
+        <div class="feat-icon-wrap" style="--icon-color: #ec4899;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10,9 9,9 8,9"/></svg>
         </div>
-    </section>
+        <h3 class="feat-title">AI Summarization</h3>
+        <p class="feat-desc">Structured or brief AI summaries of any legal document, clause, or section in seconds.</p>
+      </div>
 
-    <!-- TECH STACK SECTION -->
-    <section class="tech-stack" id="tech-stack">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Built on Industry-Leading Technology</h2>
-                <p class="section-subtitle">Enterprise-grade infrastructure for lightning-fast, reliable legal AI</p>
-            </div>
-
-            <div class="tech-grid">
-                <div class="tech-card">
-                    <span class="tech-emoji">▲</span>
-                    <h4 class="tech-name">Next.js 16</h4>
-                    <p class="tech-role">Framework (App Router)</p>
-                </div>
-
-                <div class="tech-card">
-                    <span class="tech-emoji">🦙</span>
-                    <h4 class="tech-name">LawHub Ai</h4>
-                    <p class="tech-role">Primary AI Engine</p>
-                </div>
-
-                <div class="tech-card">
-                    <span class="tech-emoji">✦</span>
-                    <h4 class="tech-name">Google Gemini</h4>
-                    <p class="tech-role">AI Fallback</p>
-                </div>
-
-                <div class="tech-card">
-                    <span class="tech-emoji">🍃</span>
-                    <h4 class="tech-name">MongoDB</h4>
-                    <p class="tech-role">Legal Database</p>
-                </div>
-
-                <div class="tech-card">
-                    <span class="tech-emoji">TS</span>
-                    <h4 class="tech-name">TypeScript</h4>
-                    <p class="tech-role">Type Safety</p>
-                </div>
-
-                <div class="tech-card">
-                    <span class="tech-emoji">🌊</span>
-                    <h4 class="tech-name">Tailwind CSS</h4>
-                    <p class="tech-role">Styling</p>
-                </div>
-
-                <div class="tech-card">
-                    <span class="tech-emoji">⚡</span>
-                    <h4 class="tech-name">NDJSON Streaming</h4>
-                    <p class="tech-role">Real-time AI delivery</p>
-                </div>
-
-                <div class="tech-card">
-                    <span class="tech-emoji">🐻</span>
-                    <h4 class="tech-name">Zustand</h4>
-                    <p class="tech-role">State Management</p>
-                </div>
-
-                <div class="tech-card">
-                    <span class="tech-emoji">🎭</span>
-                    <h4 class="tech-name">Framer Motion</h4>
-                    <p class="tech-role">Animations</p>
-                </div>
-            </div>
+      <div class="feat-card">
+        <div class="feat-icon-wrap" style="--icon-color: #f59e0b;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12h.01"/><path d="M15 12h.01"/><path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"/><path d="M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1"/></svg>
         </div>
-    </section>
+        <h3 class="feat-title">Citation Generator</h3>
+        <p class="feat-desc">Auto-generate Bluebook, APA 7th, MLA 9th, and Chicago citations for any law in the database.</p>
+      </div>
 
-    <!-- FAQ SECTION -->
-    <section class="faq" id="faq">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Frequently Asked Questions</h2>
-            </div>
-
-            <div class="faq-container">
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Is LawHub free to use?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes, completely free. No registration, no subscription, no hidden fees. LawHub is committed to making legal research accessible to everyone in Bangladesh.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Does LawHub store my data?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>No. All bookmarks, history, and settings are stored locally in your browser. Zero server-side data storage. Your privacy is our priority.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>What legal sources does LawHub use?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Official government sources including bdlaws.minlaw.gov.bd, Bangladesh Supreme Court records, Bangladesh National Parliament publications, and verified legal compilations.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Can LawHub answer in Bangla?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes. Both the AI chat assistant and the translation tool fully support Bangla (Bengali) input and output. You can ask questions in Bangla and get answers in Bangla.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Is this real AI or just search?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Both. LawHub first searches a real MongoDB database of Bangladesh laws, then grounds the AI response in that data. You get AI intelligence with real legal accuracy — no hallucinations.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>What AI models does LawHub use?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Primary: LawHub Ai. Fallback: Google Gemini 2.5 Flash / 1.5 Flash for high availability and 99.9% uptime guarantee.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Can I use LawHub as a lawyer or law student?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Absolutely. LawHub is built for lawyers, law students, researchers, journalists, and anyone who needs to understand Bangladesh law. Note: always consult a qualified lawyer for actual legal advice.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>How accurate is the AI?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Responses are grounded in real database-retrieved documents. The AI cannot hallucinate law that isn't in the database — if no matching law is found, it tells you clearly.</p>
-                    </div>
-                </div>
-            </div>
+      <div class="feat-card">
+        <div class="feat-icon-wrap" style="--icon-color: #10b981;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
         </div>
-    </section>
+        <h3 class="feat-title">Bookmarks & History</h3>
+        <p class="feat-desc">Save documents, track research history, and export everything as JSON. Stored locally in your browser.</p>
+      </div>
 
-    <!-- FINAL CTA SECTION -->
-    <section class="final-cta">
-        <div class="cta-background">
-            <div class="gradient-blob blob-5"></div>
+      <!-- <div class="feat-card">
+        <div class="feat-icon-wrap" style="--icon-color: #ef4444;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
-        <div class="cta-content">
-            <h2 class="cta-headline">Your Legal Research Starts Here</h2>
-            <p class="cta-subheadline">500+ Bangladesh laws. Instant AI answers. Free forever.</p>
-            <div class="cta-buttons">
-                <button class="btn btn-primary btn-large">Start Exploring →</button>
-                <button class="btn btn-secondary btn-large">Try AI Assistant</button>
-            </div>
-            <div class="cta-trust">
-                🔒 No account required · 🌐 Works in English & Bangla · ⚡ Powered by LawHub Ai
-            </div>
+        <h3 class="feat-title">Privacy First</h3>
+        <p class="feat-desc">Zero server-side storage. No tracking, no cookies, no account needed. Your data stays in your browser.</p>
+      </div> -->
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-section" id="how-it-works">
+  <div class="container">
+    <div class="section-tag">Process</div>
+    <h2 class="section-title">From Question to<br>Answer in Seconds</h2>
+
+    <div class="steps-row">
+      <div class="step-card">
+        <div class="step-num">01</div>
+        <div class="step-icon">💬</div>
+        <h3>Ask Your Question</h3>
+        <p>Type in English or Bangla. LawHub understands intent — penalties, procedures, eligibility, definitions.</p>
+      </div>
+      <div class="step-connector">
+        <svg width="40" height="2" viewBox="0 0 40 2"><line x1="0" y1="1" x2="40" y2="1" stroke="currentColor" stroke-width="1" stroke-dasharray="4 3"/></svg>
+      </div>
+      <div class="step-card">
+        <div class="step-num">02</div>
+        <div class="step-icon">⚡</div>
+        <h3>AI + Database Fusion</h3>
+        <p>Your query searches a live MongoDB legal database simultaneously with LawHub Ai — best match becomes grounded context.</p>
+      </div>
+      <div class="step-connector">
+        <svg width="40" height="2" viewBox="0 0 40 2"><line x1="0" y1="1" x2="40" y2="1" stroke="currentColor" stroke-width="1" stroke-dasharray="4 3"/></svg>
+      </div>
+      <div class="step-card">
+        <div class="step-num">03</div>
+        <div class="step-icon">✅</div>
+        <h3>Grounded, Sourced Answer</h3>
+        <p>Precise response citing exact law, section, and year. No hallucinations. Switch to Translate, Summarize, or Cite with one click.</p>
+      </div>
+    </div>
+
+    <!-- Pipeline terminal -->
+    <div class="pipeline-terminal">
+      <div class="terminal-header">
+        <span class="t-dot r"></span>
+        <span class="t-dot y"></span>
+        <span class="t-dot g"></span>
+        <span class="terminal-title">LawHub Query Pipeline</span>
+      </div>
+      <div class="pipeline-flow">
+        <div class="pipe-step">
+          <span class="pipe-label">User Query</span>
+          <span class="pipe-arrow">→</span>
         </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <div class="footer-logo">
-                    <span class="logo-icon">⚖️</span>
-                    <span class="logo-text">LawHub</span>
-                </div>
-                <p class="footer-tagline">AI Legal Research for Bangladesh</p>
-            </div>
-
-            <div class="footer-section">
-                <h4 class="footer-title">Navigation</h4>
-                <ul class="footer-links">
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#how-it-works">How It Works</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#demo">Try It</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h4 class="footer-title">Legal</h4>
-                <ul class="footer-links">
-                    <li><a href="#">Disclaimer</a></li>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Terms</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h4 class="footer-title">About</h4>
-                <p class="footer-text">LawHub is an open-source legal research platform powered by AI, dedicated to democratizing access to Bangladesh's legal information.</p>
-            </div>
+        <div class="pipe-step">
+          <span class="pipe-label">Intent Detection</span>
+          <span class="pipe-arrow">→</span>
         </div>
-
-        <div class="footer-bottom">
-            <div class="footer-disclaimer">
-                ⚖️ <strong>Legal Disclaimer:</strong> LawHub is for educational purposes only. Not legal advice. Always consult a qualified lawyer.
-            </div>
-            <div class="footer-credits">
-                <p>Built with Next.js · Powered by LawHub Ai · Made for Bangladesh</p>
-                <p>© 2025 LawHub. Free for public use.</p>
-            </div>
+        <div class="pipe-step">
+          <span class="pipe-label">MongoDB Search</span>
+          <span class="pipe-arrow">→</span>
         </div>
-    </footer>
+        <div class="pipe-step">
+          <span class="pipe-label">Relevance Scoring</span>
+          <span class="pipe-arrow">→</span>
+        </div>
+        <div class="pipe-step">
+          <span class="pipe-label highlight">LawHub Ai</span>
+          <span class="pipe-arrow">→</span>
+        </div>
+        <div class="pipe-step last">
+          <span class="pipe-label">Streamed Answer + Sources</span>
+        </div>
+      </div>
+      <div class="terminal-cursor">█</div>
+    </div>
+  </div>
+</section>
 
-    <script src="script.js"></script>
+<!-- CATEGORIES -->
+<section class="categories-section" id="categories">
+  <div class="container">
+    <div class="section-tag">Coverage</div>
+    <h2 class="section-title">Every Area of Bangladesh Law</h2>
+
+    <div class="categories-grid">
+      <div class="cat-card" style="--cat-color: #ec4899;">
+        <span class="cat-emoji">👨‍👩‍👧</span>
+        <h3>Family Law</h3>
+        <span class="cat-count">45+ documents</span>
+      </div>
+      <div class="cat-card" style="--cat-color: #f59e0b;">
+        <span class="cat-emoji">🏠</span>
+        <h3>Property Law</h3>
+        <span class="cat-count">65+ documents</span>
+      </div>
+      <div class="cat-card" style="--cat-color: #3b82f6;">
+        <span class="cat-emoji">💼</span>
+        <h3>Labor Law</h3>
+        <span class="cat-count">38+ documents</span>
+      </div>
+      <div class="cat-card" style="--cat-color: #ef4444;">
+        <span class="cat-emoji">⚖️</span>
+        <h3>Criminal Law</h3>
+        <span class="cat-count">52+ documents</span>
+      </div>
+      <div class="cat-card" style="--cat-color: #8b5cf6;">
+        <span class="cat-emoji">💻</span>
+        <h3>Cyber Law & ICT</h3>
+        <span class="cat-count">28+ documents</span>
+      </div>
+      <div class="cat-card" style="--cat-color: #10b981;">
+        <span class="cat-emoji">🏢</span>
+        <h3>Business & Corporate</h3>
+        <span class="cat-count">72+ documents</span>
+      </div>
+      <div class="cat-card" style="--cat-color: #06b6d4;">
+        <span class="cat-emoji">💰</span>
+        <h3>Tax Law</h3>
+        <span class="cat-count">35+ documents</span>
+      </div>
+      <div class="cat-card" style="--cat-color: #06b6d4;">
+        <h1>Other Laws</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEMO TABS -->
+<section class="demo-section" id="demo">
+  <div class="container">
+    <div class="section-tag">Live Demo</div>
+    <h2 class="section-title">See It In Action</h2>
+
+    <div class="tabs-row">
+      <button class="tab active" data-tab="chat">AI Chat</button>
+      <button class="tab" data-tab="translation">Legal Translation</button>
+      <button class="tab" data-tab="summary">AI Summary</button>
+      <button class="tab" data-tab="citation">Citations</button>
+    </div>
+
+    <div class="tab-panels">
+
+      <!-- CHAT -->
+      <div class="tab-panel active" id="tab-chat">
+        <div class="demo-panel">
+          <div class="demo-panel-chat">
+            <div class="dp-msg dp-user">আমি কিভাবে ডিভোর্স ফাইল করবো?</div>
+            <div class="dp-msg dp-ai">
+              <strong>Family Ordinance, 1961:</strong><br><br>
+              For Muslim marriages, divorce can be filed through:<br>
+              1. Talaq (divorce by husband)<br>
+              2. Khula (mutual consent)<br>
+              3. Judicial divorce through Family Court<br><br>
+              <strong>Family Courts Ordinance, 1985:</strong><br>
+              File a petition in your district Family Court under Section 2.
+            </div>
+          </div>
+          <div class="demo-panel-sources">
+            <div class="dp-source"><span class="dp-source-num">§</span><div><div class="dp-sname">Family Ordinance, 1961</div><div class="dp-sref">Section 2</div></div></div>
+            <div class="dp-source"><span class="dp-source-num">§</span><div><div class="dp-sname">Family Courts Ordinance, 1985</div><div class="dp-sref">Section 5</div></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TRANSLATION -->
+      <div class="tab-panel" id="tab-translation">
+        <div class="demo-panel translation-panel">
+          <div class="trans-box">
+            <div class="trans-lang">English</div>
+            <p>"Under the Penal Code Section 420, whoever commits fraud shall be punished with imprisonment up to three years and fine."</p>
+          </div>
+          <div class="trans-swap">⇅</div>
+          <div class="trans-box">
+            <div class="trans-lang">বাংলা</div>
+            <p>"দণ্ডবিধির ৪২০ ধারা অনুযায়ী, যে ব্যক্তি জালিয়াতি করে তিন বছর পর্যন্ত কারাদণ্ড এবং জরিমানার সাজা পাবেন।"</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUMMARY -->
+      <div class="tab-panel" id="tab-summary">
+        <div class="demo-panel">
+          <div class="summary-toggles">
+            <button class="sum-toggle active" data-sum="structured">Structured</button>
+            <button class="sum-toggle" data-sum="brief">Brief</button>
+          </div>
+          <div class="summary-body structured">
+            <h4>Bangladesh Labor Act, 2006 — Key Points</h4>
+            <ul>
+              <li><strong>Scope:</strong> All establishments with 10+ workers</li>
+              <li><strong>Working Hours:</strong> Maximum 48 hours per week</li>
+              <li><strong>Overtime:</strong> Compensated at 1.5× normal rate</li>
+              <li><strong>Leave:</strong> Minimum 2 days/week + annual leave</li>
+              <li><strong>Child Labor:</strong> Minimum age 15 years</li>
+              <li><strong>Penalties:</strong> Violation fines up to 50,000 BDT</li>
+            </ul>
+          </div>
+          <div class="summary-body brief" style="display:none;">
+            <p>The Bangladesh Labor Act, 2006 protects workers' rights, sets maximum working hours at 48/week, mandates overtime compensation, ensures minimum leave, prohibits child labor under 15, and penalizes violations up to 50,000 BDT.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CITATION -->
+      <div class="tab-panel" id="tab-citation">
+        <div class="demo-panel">
+          <div class="citation-grid">
+            <div class="cit-block">
+              <div class="cit-format">Bluebook</div>
+              <p class="cit-text">BANGLADESH LABOR ACT, 2006, § 2 (Bangladesh)</p>
+              <button class="cit-copy" onclick="copyText(this)">Copy</button>
+            </div>
+            <div class="cit-block">
+              <div class="cit-format">APA 7th</div>
+              <p class="cit-text">Government of Bangladesh. (2006). Bangladesh Labor Act, 2006 (§ 2). Ministry of Labor.</p>
+              <button class="cit-copy" onclick="copyText(this)">Copy</button>
+            </div>
+            <div class="cit-block">
+              <div class="cit-format">MLA 9th</div>
+              <p class="cit-text">Bangladesh. Government. "Bangladesh Labor Act, 2006." § 2, 2006.</p>
+              <button class="cit-copy" onclick="copyText(this)">Copy</button>
+            </div>
+            <div class="cit-block">
+              <div class="cit-format">Chicago</div>
+              <p class="cit-text">Bangladesh. "Labor Act." 2006, §§ 2.</p>
+              <button class="cit-copy" onclick="copyText(this)">Copy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECH STACK -->
+<section class="tech-section" id="tech-stack">
+  <div class="container">
+    <div class="section-tag">Built With</div>
+    <h2 class="section-title">Industry-Leading Technology</h2>
+    <p class="section-sub">Enterprise-grade infrastructure for lightning-fast, reliable legal AI.</p>
+
+    <div class="tech-grid">
+      <div class="tech-card">
+        <span class="tech-sym">▲</span>
+        <div class="tech-name">Next.js 16</div>
+        <div class="tech-role">Framework (App Router)</div>
+      </div>
+      <div class="tech-card">
+        <span class="tech-sym">🦙</span>
+        <div class="tech-name">LawHub Ai</div>
+        <div class="tech-role">Primary AI Engine</div>
+      </div>
+      <div class="tech-card">
+        <span class="tech-sym">✦</span>
+        <div class="tech-name">Google Gemini</div>
+        <div class="tech-role">AI Fallback</div>
+      </div>
+      <div class="tech-card">
+        <span class="tech-sym">🍃</span>
+        <div class="tech-name">MongoDB</div>
+        <div class="tech-role">Legal Database</div>
+      </div>
+      <div class="tech-card">
+        <span class="tech-sym" style="font-size:14px;font-weight:700;">TS</span>
+        <div class="tech-name">TypeScript</div>
+        <div class="tech-role">Type Safety</div>
+      </div>
+      <div class="tech-card">
+        <span class="tech-sym">🌊</span>
+        <div class="tech-name">Tailwind CSS</div>
+        <div class="tech-role">Styling</div>
+      </div>
+      <div class="tech-card">
+        <span class="tech-sym">⚡</span>
+        <div class="tech-name">NDJSON Stream</div>
+        <div class="tech-role">Real-time AI Delivery</div>
+      </div>
+      <div class="tech-card">
+        <span class="tech-sym">🐻</span>
+        <div class="tech-name">Zustand</div>
+        <div class="tech-role">State Management</div>
+      </div>
+      <div class="tech-card">
+        <span class="tech-sym">🎭</span>
+        <div class="tech-name">Framer Motion</div>
+        <div class="tech-role">Animations</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <div class="container">
+    <div class="section-tag">FAQ</div>
+    <h2 class="section-title">Frequently Asked Questions</h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q">
+          <span>Is LawHub free to use?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Yes, completely free. No registration, no subscription, no hidden fees. LawHub is committed to making legal research accessible to everyone in Bangladesh.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span>Does LawHub store my data?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>No. All bookmarks, history, and settings are stored locally in your browser. Zero server-side data storage. Your privacy is the priority.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span>What legal sources does LawHub use?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Official government sources including bdlaws.minlaw.gov.bd, Bangladesh Supreme Court records, Bangladesh National Parliament publications, and verified legal compilations.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span>Can LawHub answer in Bangla?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Yes. Both the AI chat assistant and the translation tool fully support Bangla input and output. Ask in Bangla, get answers in Bangla.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span>Is this real AI or just search?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Both. LawHub first searches a real MongoDB database of Bangladesh laws, then grounds the AI response in that data. Intelligence with real legal accuracy — no hallucinations.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span>What AI models does LawHub use?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Primary: LawHub Ai. Fallback: Google Gemini 2.5 Flash / 1.5 Flash for high availability and 99.9% uptime.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span>Can I use LawHub as a lawyer or law student?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Absolutely. Built for lawyers, law students, researchers, and journalists. Note: always consult a qualified lawyer for actual legal advice.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span>How accurate is the AI?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Responses are grounded in real database-retrieved documents. The AI cannot hallucinate law that isn't in the database — if no match is found, it tells you clearly.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta-section">
+  <div class="cta-glow"></div>
+  <div class="container">
+    <div class="cta-inner">
+      <div class="section-tag" style="margin: 0 auto 1.5rem;">Get Started</div>
+      <h2 class="cta-headline">Your Legal Research<br>Starts Here</h2>
+      <p class="cta-sub">500+ Bangladesh laws. Instant AI answers. Free forever.</p>
+      <div class="cta-btns">
+        <a href="http://lawhub-dusky.vercel.app/" target="_blank" class="btn-primary btn-lg">
+          Start Exploring
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M9 4L13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#features" class="btn-ghost btn-lg">Explore Features</a>
+      </div>
+      <p class="cta-fine">Works in English & Bangla · Powered by LawHub Ai</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <svg class="logo-mark" width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2L12 6M12 18L12 22M4.22 4.22L7.05 7.05M16.95 16.95L19.78 19.78M2 12L6 12M18 12L22 12M4.22 19.78L7.05 16.95M16.95 7.05L19.78 4.22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+          LawHub
+        </div>
+        <p>AI Legal Research for Bangladesh. Open, free, and accurate.</p>
+      </div>
+      <div class="footer-links-col">
+        <h4>Platform</h4>
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#demo">Try It</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="footer-links-col">
+        <h4>Legal</h4>
+        <a href="#">Disclaimer</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+      </div>
+      <div class="footer-links-col">
+        <h4>About</h4>
+        <p style="font-size:0.875rem;color:#6b7280;line-height:1.6;">Legal research platform dedicated to democratizing access to Bangladesh's legal information.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-disclaimer">
+        ⚖️ <strong>Legal Disclaimer:</strong> Always consult qualified legal professionals.
+      </div>
+      <div class="footer-copy">
+        <p>© 2026 LawHub · All rights reserved</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 /* ============================================
-   LAWHUB LANDING PAGE — JAVASCRIPT
+   KanunPotro LANDING PAGE — JAVASCRIPT
    ============================================ */
 
 // ---- Navbar scroll ----
@@ -140,4 +140,4 @@ const rippleStyle = document.createElement('style');
 rippleStyle.textContent = `@keyframes ripple{from{transform:scale(0);opacity:1}to{transform:scale(3);opacity:0}}`;
 document.head.appendChild(rippleStyle);
 
-console.log('LawHub ✓');
+console.log('KanunPotro ✓');
